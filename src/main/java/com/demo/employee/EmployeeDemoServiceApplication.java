@@ -1,0 +1,14 @@
+package com.demo.employee;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EmployeeDemoServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmployeeDemoServiceApplication.class, args);
+	}
+
+}
+

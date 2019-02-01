@@ -1,0 +1,58 @@
+[
+   {
+      "id": 1234,
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "profession": "Junior Developer",
+      "department": "IT"
+   },
+   {
+      "id": 1111,
+      "firstName": "Sara",
+      "lastName": "Smidth",
+      "profession": "Sofware Engineer",
+      "department": "IT"
+   },
+   {
+      "id": 1592,
+      "firstName": "Alexander",
+      "lastName": "Konradi",
+      "profession": "Architect",
+      "department": "IT"
+   },
+   {
+      "id": 2222,
+      "firstName": "Jasper",
+      "lastName": "Morgan",
+      "profession": "Project Manager",
+      "department": "IT"
+   },
+   {
+      "id": 3690,
+      "firstName": "Olga",
+      "lastName": "Singen",
+      "profession": "Accountant",
+      "department": "HR"
+   },
+   {
+      "id": 2345,
+      "firstName": "James",
+      "lastName": "Bond",
+      "profession": "Director",
+      "department": "HR"
+   },
+   {
+      "id": 4567,
+      "firstName": "Steve",
+      "lastName": "Stevenson",
+      "profession": "Software Tester",
+      "department": "QA"
+   },
+   {
+      "id": 6789,
+      "firstName": "Thorsten",
+      "lastName": "Koch",
+      "profession": "Business Analyst",
+      "department": "BA"
+   }
+]
