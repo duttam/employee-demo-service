@@ -58,13 +58,22 @@ public class EmployeeRepository {
 		}).collect(Collectors.toList());
 	}
 	public void updateEmployee(Employee updateEmployee) {
-		for (Employee employee : employees) {
+		/*for (Employee employee : employees) {
 			if(employee.equals(updateEmployee)) {
 				int index = employees.indexOf(employee);
 				employees.set(index, updateEmployee);
 			}
 				
-		}
+		}*/
+		
+		employees = 
+				employees.stream()
+			        .map(s-> {
+			        	Employee employee = new Employee(updateEmployee.getId(),updateEmployee.getFirstName(),updateEmployee.getLastName(),updateEmployee.getProfession(),updateEmployee.getDepartment()); // create new instance
+			        	//employee.setDepartment("");; // mutate its state
+			            return employee; // return mutated instance
+			            })
+			       .collect(Collectors.toList());
 	}
 
 	public Employee getEmployee(Employee selectedEmployee) {
