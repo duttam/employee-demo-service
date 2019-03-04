@@ -28,6 +28,7 @@ public class EmployeeRepository {
 		
 		try {
 			employees = mapper.readValue(new File("employees.json"), mapType);
+			System.out.println(employees.size());
 		} catch (JsonParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
