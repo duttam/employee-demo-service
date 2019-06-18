@@ -50,7 +50,8 @@ public class EmployeeResource{
 		Employee employee = employeeRepository.getEmployee(new Employee(employeeId));
 		if(employee!=null)
 			return new ResponseEntity<>(employee,HttpStatus.OK);
-		
+		else
+			logger.info("wrong Employeeid "+employeeId);
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		
 	}
