@@ -39,6 +39,7 @@ public class EmployeeResource{
 		
 		logger.info("Getting all Employees ");
 		List<Employee> employees = employeeRepository.findAllEmployees();
+		logger.info("Employees List size "+employees.size());
     	return new ResponseEntity<>(employees, HttpStatus.OK);
 		
 	}
@@ -52,6 +53,7 @@ public class EmployeeResource{
 			return new ResponseEntity<>(employee,HttpStatus.OK);
 		else
 			logger.info("wrong Employeeid "+employeeId);
+
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		
 	}
