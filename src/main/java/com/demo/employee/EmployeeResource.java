@@ -39,6 +39,7 @@ public class EmployeeResource{
 		
 		logger.info("Getting all Employees ");
 		List<Employee> employees = employeeRepository.findAllEmployees();
+		logger.info("Employees List size "+employees.size());
     	return new ResponseEntity<>(employees, HttpStatus.OK);
 		
 	}
